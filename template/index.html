@@ -1,0 +1,175 @@
+{% extends 'base.html' %}
+
+
+{% block title %}Home{% endblock title %}
+
+
+{% block body %}
+
+<div class="container-fluid my-4">
+  <div id="carouselExampleCaptions" class="carousel slide w-75 mx-auto">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+        aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+        aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+        aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img
+          src="https://images.unsplash.com/photo-1534531304203-b830551771b9?q=80&w=1170&h=600&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+          class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Find Your Perfect Board</h5>
+          <p>From beginner to pro, discover the skateboard that matches your riding style.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img
+          src="https://plus.unsplash.com/premium_photo-1666183670058-fd747f1fc6b4?q=80&w=1170&h=600&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+          class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Master Every Trick</h5>
+          <p>Explore our street skateboards designed for flips, grinds, and smooth control.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img
+          src="https://plus.unsplash.com/premium_photo-1683993551934-9368a6a84985?q=80&w=1170&h=600&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+          class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Ride Beyond Limits</h5>
+          <p>Premium skateboards built for speed, style, and every adventure.</p>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+</div>
+
+<div class="container">
+  <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+<div class="col">
+  <div class="card shadow-sm">
+
+<img src="https://images.unsplash.com/photo-1422000670866-529d53611fe9?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NDZ8fHNrYXRlYm9hcmR8ZW58MHx8MHx8fDA%3D" class="card-img-top" alt="Street Skateboard" style="height:225px; object-fit:cover;">
+    <div class="card-body">
+      <h5 class="card-title">Street Skateboard</h5>
+
+      <p class="card-text">
+        Built for skate parks and street tricks with excellent stability and
+        control.
+      </p>
+
+      <div class="d-flex justify-content-between align-items-center">
+        <div class="btn-group">
+          <button type="button" class="btn btn-sm btn-outline-primary">
+            Buy Now
+          </button>
+          <button type="button" class="btn btn-sm btn-outline-secondary">
+            Details
+          </button>
+        </div>
+
+        <small class="text-body-secondary">$28</small>
+      </div>
+    </div>
+
+  </div>
+</div>
+<div class="col">
+  <div class="card shadow-sm">
+
+<img src="https://images.unsplash.com/photo-1531565637446-32307b194362?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NTJ8fHNrYXRlYm9hcmR8ZW58MHx8MHx8fDA%3D" class="card-img-top" alt="Skateboard" style="height:225px; object-fit:cover;">
+
+    <div class="card-body">
+      <h5 class="card-title">Street Skateboard</h5>
+
+      <p class="card-text">
+        Comfortable and smooth for daily commuting around the city.
+      </p>
+
+      <div class="d-flex justify-content-between align-items-center">
+        <div class="btn-group">
+          <button type="button" class="btn btn-sm btn-outline-primary">
+            Buy Now
+          </button>
+          <button type="button" class="btn btn-sm btn-outline-secondary">
+            Details
+          </button>
+        </div>
+
+        <small class="text-body-secondary">$15</small>
+      </div>
+    </div>
+
+  </div>
+</div>
+<div class="col">
+  <div class="card shadow-sm">
+
+<img src="https://images.unsplash.com/photo-1607639694361-fe08243bf70c?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NjR8fHNrYXRlYm9hcmR8ZW58MHx8MHx8fDA%3D" class="card-img-top" alt="Skateboard" style="height:225px; object-fit:cover;">
+
+    <div class="card-body">
+      <h5 class="card-title">Street Skateboard</h5>
+
+      <p class="card-text">
+        Designed for long-distance rides and downhill cruising.
+      </p>
+
+      <div class="d-flex justify-content-between align-items-center">
+        <div class="btn-group">
+          <button type="button" class="btn btn-sm btn-outline-primary">
+            Buy Now
+          </button>
+          <button type="button" class="btn btn-sm btn-outline-secondary">
+            Details
+          </button>
+        </div>
+
+        <small class="text-body-secondary">$12</small>
+      </div>
+    </div>
+
+  </div>
+</div>
+<div class="col">
+  <div class="card shadow-sm">
+
+<img src="https://images.unsplash.com/photo-1567606940890-717aec672c0f?w=500&h=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NTR8fHNrYXRlYm9hcmR8ZW58MHx8MHx8fDA%3D" class="card-img-top" alt="Skateboard" style="height:225px; object-fit:cover;">
+
+    <div class="card-body">
+      <h5 class="card-title">Street Skateboard</h5>
+
+      <p class="card-text">
+        High-quality maple wood deck built for experienced riders
+      </p>
+
+      <div class="d-flex justify-content-between align-items-center">
+        <div class="btn-group">
+          <button type="button" class="btn btn-sm btn-outline-primary">
+            Buy Now
+          </button>
+          <button type="button" class="btn btn-sm btn-outline-secondary">
+            Details
+          </button>
+        </div>
+
+        <small class="text-body-secondary">$29</small>
+      </div>
+    </div>
+
+  </div>
+</div>
+  </div>
+</div>
+{% endblock body %}

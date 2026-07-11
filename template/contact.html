@@ -1,0 +1,41 @@
+{% extends 'base.html' %}
+
+
+{% block title %}Contact{% endblock title %}
+
+
+{% block body %}
+<div class="container-fluid px-0 mb-3">
+    <img src="https://images.unsplash.com/photo-1596524430615-b46475ddff6e?q=80&w=1170&h=400&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        class="d-block w-100 mx-0" alt="...">
+</div>
+<div class="container mb-3 py-4">
+    <h1 class="text-center">Contact Us</h1>
+    <form method="post" action="/contact">
+        {% csrf_token %}
+        <div class="mb-3">
+            <label for="name" class="form-label">Name</label>
+            <input type="text" class="form-control" id="name" name="name" placeholder="Enter your Name">
+        </div>
+        <div class="mb-3">
+            <label for="email" class="form-label">Email address</label>
+            <input type="email" class="form-control" id="email" name="email" placeholder="Enter your Email">
+            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+        </div>
+        <div class="mb-3">
+            <label for="password" class="form-label">Password</label>
+            <input type="password" class="form-control" id="password" name="password">
+        </div> 
+        <div class="mb-3">
+            <label for="phone" class="form-label">Phone no</label>
+            <input type="tel" class="form-control" id="phone" name="phone" placeholder="Enter your Phone no.">
+        </div>
+        <div class="mb-3">
+            <label for="desc" class="form-label">Tell me about what you want to contact me for...</label>
+            <input type="text" class="form-control" id="desc" aria-rowspan="3" name="desc"
+                placeholder="Enter your Name">
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+</div>
+{% endblock body %}
