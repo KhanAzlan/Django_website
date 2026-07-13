@@ -25,3 +25,20 @@ jobs:
           context: .
           push: true
           tags: azlank4an/django-website:latest
+
+  deploy:
+    needs: docker
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Deploy to EC2
+        uses: appleboy/ssh-action@v1.2.2
+        with:
+          host: ${{ secrets.EC2_HOST }}
+          username: ${{ secrets.EC2_USER }}
+          key: ${{ secrets.EC2_SSH_KEY }}
+          script: |
+            docker pull azlank4an/django-website:latest
+            docker stop django-app || true
+            docker rm django-app || true
+            docker run -d -p 8000:8000 --name django-app azlank4an/django-website:latest
