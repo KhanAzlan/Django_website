@@ -1,0 +1,26 @@
+name: Build and Push docker Image
+
+om:
+  push:
+    braches:
+      - main
+
+job:
+  docker:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Cheackout repository
+        uses: action/checkout@v4
+
+      - name: Log in to Docker Hub
+        uses: docker/login-activity@4
+        with:
+          username: ${{ secrets.DOCKER_USERNAME }}
+          password: ${{ secrets.DOCKER_PASSWORD }}
+
+      - name: Build Docker image
+        run: docker build -t ${{ secrets.DOCKER_USERNAME }}/django-website:latest .
+
+      - name: Push Docker image
+        run: docker push ${{ secrets.DOCKER_PASSWORD }}/django-website:latest
