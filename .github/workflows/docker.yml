@@ -1,11 +1,11 @@
 name: Build and Push docker Image
 
-om:
+on:
   push:
     braches:
       - main
 
-job:
+jobs:
   docker:
     runs-on: ubuntu-latest
 
